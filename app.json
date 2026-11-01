@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Finance",
+    "slug": "finance",
+    "scheme": "finance",
+    "version": "2.8.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "permissions": [
+      "android.permission.POST_NOTIFICATIONS"
+    ],
+    "android": {
+      "package": "com.finance.local",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#00402F"
+      },
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-system-ui",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#003E30",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "dark": {
+            "backgroundColor": "#002B23",
+            "image": "./assets/splash-icon.png"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#16845D"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f48a412d-4ec5-4ffa-8f60-a8854a713789"
+      }
+    },
+    "icon": "./assets/icon.png"
+  }
+}
